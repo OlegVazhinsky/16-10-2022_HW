@@ -6,7 +6,7 @@
 int userNumber = GetUserNumber("Введите трехзначное число = ");
 int answer = 0;
 
-if ((userNumber < 100 && userNumber > -99) || userNumber > 999 || userNumber < -999) Console.WriteLine($"Число {userNumber} не трехзначное.");
+if ((userNumber < 100 && userNumber > -100) || userNumber > 999 || userNumber < -999) Console.WriteLine($"Число {userNumber} не трехзначное.");
 else {
     if (userNumber > 0) answer = (userNumber % 100) / 10;
     else answer =  (-userNumber % 100) / 10;
